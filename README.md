@@ -3,3 +3,87 @@ The MS Paint Application doesn't have API for the MCP Server to Access and conne
 Prompting is the Key in this project. The prompt is designed in such a way that LLM can call the paint tool through MCP Client Automatically, without the use of any manual
 function tools. 
 
+## Table of Contents
+  * [Demo](#demo)
+  * [Overview](#overview)
+  * [Motivation](#motivation)
+  * [What It Does](#what-it-does)
+  * [Getting Started](#Getting-started)
+  * [Usage](#usage)
+  * [Directory Tree](#directory-tree)
+  * [To Do](#to-do)
+  * [Bug / Feature Request](#bug---feature-request)
+  * [Techstack Used](#techstack-used)
+  * [License](#license)
+  * [Credits](#credits)
+
+## Demo
+
+
+
+## Overview
+
+
+## Motivation
+
+
+## What It Does
+
+
+## Getting Started
+  We will get started with installation and set up process. Clone the repository and open the folder using Vs Code.
+  ### Clone this repository into a local folder:
+  ```
+  git clone https://github.com/dhanushpittala11/SummarizerText_Hf_End2End_1.git
+  ```
+  ### Setup Environment using:
+  ```bash
+  conda create -p venv python==3.10 -y
+  ```
+  If conda is not installed, run this command in the terminal of the project environment.
+  ```bash
+  pip install conda
+  ```
+  ### Activate the environment:
+  ```bash
+  conda activate venv/
+  ```
+  ### Install all the required libraries and packages using the command:
+  ```bash
+  pip install -r requirements.txt
+  ```
+## Usage
+  ### Now run the script using:
+
+## Directory Tree
+
+
+## Bug / Feature Request
+
+
+## Techstack Used
+
+
+ ### Web Frameworks and Deployment
+ * **FastAPI**
+ * **uvicorn**
+ * **Starlette**
+
+## License
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+## Team
+Dhanush Pittala - [@Linkedin](https://www.linkedin.com/in/dhanush-pittala-83b964225) - dhanushpittala05@gmail.com
+
+## Credits
+
