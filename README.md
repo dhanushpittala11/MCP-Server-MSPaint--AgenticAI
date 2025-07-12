@@ -41,7 +41,7 @@ I write an MCP server which can call the necessary tools when the LLM requests, 
   We will get started with installation and set up process. Clone the repository and open the folders using Vs Code or Cursor IDE.
   ### Clone this repository into a local folder:
   ```
-  git clone https://github.com/dhanushpittala11/SummarizerText_Hf_End2End_1.git
+  git clone https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI.git
   ```
   ### Create a .env file to store Gemini API Key.
   ### Create a requirements.txt file
