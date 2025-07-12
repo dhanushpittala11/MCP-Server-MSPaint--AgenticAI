@@ -15,6 +15,7 @@ Prompting is the Key in this project. The prompt is designed in such a way that 
   * [Credits](#credits)
 
 ## Demo
+[Demonstration_MCP-Paint-Perception-Memory-Decision-Action :](EAG_A6_DhanushPittala_m.mp4)
 
 [Demonstration_MCP-Paint-Planning-Reasoning :](EAG_A5_DhanushPittala.webm)
 
