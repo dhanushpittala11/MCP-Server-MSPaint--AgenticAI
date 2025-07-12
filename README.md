@@ -29,7 +29,7 @@ I write an MCP server which can call the necessary tools when the LLM requests, 
 **There are further improvements on this task as well which I have divided into further two sections. So, there are three sections in total:**
   **Section 1 :** In the system prompt, I mention the tools to call and required instructions to follow while executing the user query. The Agent   successfully opens the paint application, draws a rectangle and types the text inside it. 
 
-  **Section 2 :** Now I design my system prompt such that it qualifies all the rules mentioned in the file prompt_of_prompts.md[]. This makes sure that   
+  **Section 2 :** Now I design my system prompt such that it qualifies all the rules mentioned in the [file] (https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/blob/main/MCP-Paint/example2-3.py). This makes sure that   
     - **The model makes step-by-step reasoning**
     - **The Prompt enforces a predictable output format, seperates the reasoning steps from the tool-use, computation steps**
     - **The prompt works in a multi-turn settings, instructs the model to self-verify, encourage the model to identify the type of reasoning used**
