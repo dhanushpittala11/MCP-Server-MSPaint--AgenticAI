@@ -83,8 +83,50 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/issues/new).
 
 ## Techstack Used
+| Layer                      | Technology/Library                                                  | Purpose                                                               |
+| -------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **LLM**                    | `Google Generative AI (Gemini 2.0 Flash)`                           | Natural language reasoning and function planning                      |
+| **Server Framework**       | `FastMCP` (`mcp.server.fastmcp`)                                    | Multimodal Command Protocol (MCP) tool interface for LLM-agent system |
+| **MCP Transport**          | `StdioServerParameters`, `ClientSession`, `stdio_client`            | Communicate with MCP tools over subprocess (`example2-4.py`)          |
+| **UI Automation**          | `pywinauto`                                                         | Control Paint GUI (open, click, type, drag mouse, etc.)               |
+| **System APIs**            | `win32gui`, `win32con`, `win32api`, `GetSystemMetrics`              | Handle Paint window placement, interaction, screen resolution         |                                                |
+| **Math Computation**       | `math`                                                              | Exponentials, factorials, trigonometric operations                    |
+| **Async Handling**         | `asyncio`, `await`, `run_in_executor`                               | Concurrency and tool execution orchestration                          |
+| **Environment Management** | `dotenv`                                                            | Load API keys securely from `.env`                                    |
+| **Utilities**              | `os`, `sys`, `time`, `traceback`, `functools`, `concurrent.futures` | Miscellaneous operations, error tracing, retries                      |
+### Tools Implemented
+| Tool Name                       | Functionality                                    |
+| ------------------------------- | ------------------------------------------------ |
+| `open_paint()`                  | Launch Paint and maximize it on secondary screen |
+| `draw_rectangle()`              | Draws a rectangle using mouse events             |
+| `add_text_in_paint()`           | Types text inside Paint via GUI automation       |
+| `add`, `subtract`, etc.         | Math tools: add, subtract, factorial, etc.       |
+| `strings_to_chars_to_int()`     | Convert string to ASCII values                   |
+| `int_list_to_exponential_sum()` | Sum of exponentials of a list                    |
+| `fibonacci_numbers()`           | Generate Fibonacci sequence                      |
+| `create_thumbnail()`            | Create image thumbnail using PIL                 |
 
+### Architecture
+```
+               ┌─────────────────────────────┐
+               │      Google Gemini API      │
+               └────────────▲────────────────┘
+                            │
+         ┌──────────────────┴──────────────────┐
+         │                                     │
+┌────────────────────┐             ┌────────────────────┐
+│   talk2mcp-3.py     │            │    talk2mcp2.py    │
+│ Agent and Client    │            │ Agent and Client   │
+└─────────▲─────── ───┘            └─────────▲──────────┘
+          │                                    │
+┌─────────┴────────────┐           ┌───────────┴────────────┐
+│   example2-3.py       │          │     example2-4.py       │
+│  Tool Server (FastMCP)│          │   Tool Server (FastMCP) │
+└─────────┬─────────────┘          └──────────┬──────────────┘
+          │                                    │
+       Paint GUI ←―――― Draw + Type in Paint ―――→ Math/ASCII/Image Tools
 
+```
 
 ## License
                     GNU GENERAL PUBLIC LICENSE
@@ -103,4 +145,4 @@ software and other kinds of works.
 Dhanush Pittala - [@Linkedin](https://www.linkedin.com/in/dhanush-pittala-83b964225) - dhanushpittala05@gmail.com
 
 ## Credits
-
+The School of AI(TSAI) -EAGv1  by Rohan Shravan
