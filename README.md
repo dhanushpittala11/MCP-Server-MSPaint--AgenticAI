@@ -27,6 +27,8 @@ I write an MCP server which can call the necessary tools when the LLM requests, 
 
 **There are further improvements on this task as well which I have divided into further two sections. So, there are three sections in total:**
   **Section 1 :** In the system prompt, I mention the tools to call and required instructions to follow while executing the user query. The Agent   successfully opens the paint application, draws a rectangle and types the text inside it. 
+  * **MCP Server :** [MCP-Paint/example2-3.py](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/blob/main/MCP-Paint/example2-3.py)
+  * **Client and the Agent :** [MCP-Paint/talk2mcp-2.py](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/blob/main/MCP-Paint/talk2mcp-2.py)
     
   **Section 2 :** Now I design my system prompt such that it qualifies all the rules mentioned in the [file](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/blob/main/MCP-Paint/example2-3.py). This makes sure that   
   * **The model makes step-by-step reasoning**
@@ -34,8 +36,13 @@ I write an MCP server which can call the necessary tools when the LLM requests, 
   * **The prompt works in a multi-turn settings, instructs the model to self-verify, encourage the model to identify the type of reasoning used**
   * **The Prompt specifies necessary actions, in uncertain situations and when the tool fails**
   and then repeat the task performed in the section 1.
-
+  * **MCP Server :** [MCP-Paint-Planning-Reasoning/example2-3.py](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/tree/main/MCP-Paint-Planning-Reasoning/example2-3.py)
+  * **Client and the Agent :** [MCP-Paint-Planning-Reasoning/talk2mcp-3.py](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/blob/main/MCP-Paint-Planning-Reasoning/talk2mcp-3.py)
+    
   **Section 3 :**  Here, I create 4 different modules for 4 cognitive layers: Perception, Memory, Decision-Making, Action. Then in the talk2mcp2.py file, I configure the whole agent by integrating these files. Then I repeat the section 2. Here, I use pydantic for all inputs and outputs and modify the system prompt with pydantic related changes. 
+  * **MCP Server :** [MCP-Paint-Perception-Memory-Decision-Action/example2-4.py](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/blob/main/MCP-Paint-Perception-Memory-Decision-Action/example2-4.py)
+  * **Client and the Agent :** [MCP-Paint-Perception-Memory-Decision-Action/talk2mcp2.py](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/blob/main/MCP-Paint-Perception-Memory-Decision-Action/talk2mcp2.py)
+    
 ## Getting Started
   We will get started with installation and set up process. Clone the repository and open the folders using Vs Code or Cursor IDE.
   ### Clone this repository into a local folder:
@@ -71,7 +78,9 @@ I write an MCP server which can call the necessary tools when the LLM requests, 
 
 
 ## Bug / Feature Request
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/issues/new)
 
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/dhanushpittala11/MCP-Server-MSPaint--AgenticAI/issues/new).
 
 ## Techstack Used
 
