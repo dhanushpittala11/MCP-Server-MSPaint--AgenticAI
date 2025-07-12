@@ -16,7 +16,9 @@ Prompting is the Key in this project. The prompt is designed in such a way that 
 
 ## Demo
 
+[Demonstration_MCP-Paint-Planning-Reasoning :](EAG_A5_DhanushPittala.webm)
 
+https://github.com/user-attachments/assets/90147385-7243-4343-ab11-de200c30e77c
 
 
 ## Motivation
